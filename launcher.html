@@ -80,14 +80,18 @@
         font-weight: 700;
         text-decoration: none;
       }
+
+      .hidden {
+        display: none;
+      }
     </style>
   </head>
   <body>
     <main>
       <img src="https://yojinbo-project.github.io/taskassign/task-assign-192.png" alt="">
       <h1>タスクアサイン</h1>
-      <p>このページをSafariの共有メニューから「ホーム画面に追加」してください。ホーム画面のアイコンから起動すると、タスクアサインを開きます。</p>
-      <a id="openApp" href="#">タスクアサインを開く</a>
+      <p id="installMessage">このページをSafariの共有メニューから「ホーム画面に追加」してください。ホーム画面のアイコンから起動すると、タスクアサインを開きます。</p>
+      <a id="openApp" href="#">タスクアサイン アプリを開く</a>
     </main>
 
     <script>
@@ -98,6 +102,8 @@
       document.getElementById('openApp').href = APP_URL;
 
       if (isStandalone) {
+        document.getElementById('installMessage').classList.add('hidden');
+        document.getElementById('openApp').classList.add('hidden');
         window.location.replace(APP_URL);
       }
     </script>
