@@ -3,12 +3,12 @@
   "short_name": "タスク",
   "icons": [
     {
-      "src": "https://github.com/yojinbo-project/taskassign/blob/main/task-assign-192.png",
+      "src": "https://yojinbo-project.github.io/taskassign/task-assign-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://github.com/yojinbo-project/taskassign/blob/main/task-assign-512.png",
+      "src": "https://yojinbo-project.github.io/taskassign/task-assign-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
